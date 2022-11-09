@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-weight: 500;
+}
+.conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.heder{
+    padding: 36px 0px;
+    background-color: white;
+    /* position: fixed;
+    top: 0;left: 0;width: 100%; */
+}
+
+.heder__conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.heder__links{
+    display: flex;
+    list-style-type: none;
+}
+.heder__link{
+    margin-right: 40px;
+    position: relative;
+}
+.heder__link:last-child{
+    margin-right: 0px;
+}
+
+.heder__link a{
+    font-size: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+.heder__link.activ{
+    font-weight: 700;
+}
+.heder__link.activ::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #2F5DFF;
+    /* transition: all 0.3s ease-in-out; */
+    top: 100%;
+}
+.heder__link::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: #2F5DFF;
+    transition: all 0.3s ease-in-out;
+    top: 100%;
+}
+.heder__link:hover::before{
+    width: 100%;
+}
+
+
+.heder__city{
+    position: relative;
+}
+.heder__city p{
+    cursor: pointer;
+}
+
+.heder__city-hid{
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+
+.heder__city:hover .heder__city-hid{
+    display: block;
+}    
