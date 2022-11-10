@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    src: url("/font/Gilroy-Medium.woff") format("opentype");
+}
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url("/font/Gilroy-Bold.woff") format("opentype");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url("/font/Gilroy-Extrabold.woff") format("opentype");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +24,15 @@
 body{
     font-size: 16px;
     font-weight: 500;
+    background-color: #EDF1FF;
+    font-family: "Gilroy";
 }
 .conteiner{
     max-width: 1170px;
     margin: 0 auto;
 }
+
+
 
 .heder{
     padding: 36px 0px;
@@ -19,16 +40,14 @@ body{
     /* position: fixed;
     top: 0;left: 0;width: 100%; */
 }
-
 .heder__conteiner{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
 .heder__links{
-    display: flex;
+    display: flex; 
     list-style-type: none;
 }
 .heder__link{
@@ -38,7 +57,6 @@ body{
 .heder__link:last-child{
     margin-right: 0px;
 }
-
 .heder__link a{
     font-size: inherit;
     text-decoration: none;
@@ -68,22 +86,170 @@ body{
 .heder__link:hover::before{
     width: 100%;
 }
-
-
 .heder__city{
+    /* border: 8px ; */
     position: relative;
 }
 .heder__city p{
     cursor: pointer;
 }
-
 .heder__city-hid{
     position: absolute;
     top: 100%;
     display: none;
 }
-
-
 .heder__city:hover .heder__city-hid{
     display: block;
-}    
+}
+
+
+
+
+.titleh1{
+    margin: 64px 0px 24px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 15px;
+    font-size: 24px;    
+}
+.banner__conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+.banner__image{
+    height: 616px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.banner__image__tabs{
+    padding: 0px 6.03px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    border-radius: 30px;
+    background: linear-gradient(93.69deg, rgba(227, 227, 227, 0.8) -12.53%, rgba(248, 248, 248, 0.8) 100%);
+    height: 18px;
+    width: 70px;
+    bottom: 24px;
+    left: 450px;
+}
+.banner__image__tab{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+}
+.banner__image__tab.activ{
+    background-color: #613CEA;
+}
+.banner__select{
+    font-size: 14px;
+    margin-right: 30px;
+}
+.banner__city{
+    cursor: pointer;
+    position: relative;
+    padding: 8px 74px 8px 15px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.banner__city-hid{
+    position:absolute;
+    background-color: #2F5DFF;
+    display: none;
+    top: 100%;
+}
+.banner__city:hover .banner__city-hid{
+    display: block;
+} 
+.banner__liga{
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 6px;
+}
+.banner__liga__item{
+    cursor: pointer;
+    margin-bottom: 8px;
+    padding-left: 9px;
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+}
+.banner__liga__item:last-child{
+    margin: 0px;
+}
+.banner__liga__item.activ{
+    padding: 1.25px 0px 2.72px 9px;
+    color: #EDF1FF;
+    border-radius: 30px;
+    background-color: #2F5DFF;
+}
+
+.banner__news{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 468px;
+    height: 455px;
+}
+
+.banner__bombardir{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 670px;
+    height: 455px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nill{
+    content: "";
+    width: 100px;
+    height: 1000px;
+}
